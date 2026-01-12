@@ -111,6 +111,12 @@
           every day.
         </p>
       </div>
+      <div class="mt-6 text-center text-xs text-warmGray-500">
+        Website by{' '}
+        <a href="https://www.khalstead.com" class="transition-colors hover:text-warmGray-300">
+          Kevin Halstead, EliteWebWrxs
+        </a>
+      </div>
     </div>
   </div>
 </footer>
