@@ -1,124 +1,143 @@
 <script>
-	import { page } from '$app/stores';
-	import logo from './svelte-logo.svg';
+  import { page } from '$app/stores';
+
+  let mobileMenuOpen = false;
+
+  function toggleMenu() {
+    mobileMenuOpen = !mobileMenuOpen;
+  }
+
+  function closeMenu() {
+    mobileMenuOpen = false;
+  }
+
+  const navItems = [
+    { href: '/', label: 'Home' },
+    { href: '/services', label: 'Services' }
+    // { href: '/connect', label: 'Connect' }
+  ];
 </script>
 
-<header>
-	<div class="corner">
-		<a href="https://kit.svelte.dev">
-			<img src={logo} alt="SvelteKit" />
-		</a>
-	</div>
+<header class="bg-white shadow-md sticky top-0 z-50">
+  <div class="container-custom">
+    <div class="flex justify-between items-center py-4">
+      <!-- Logo/Brand -->
+      <a href="/" class="flex items-center space-x-3 group" on:click={closeMenu}>
+        <div class="h-16 flex items-center">
+          <img
+            src="/images/logo.webp"
+            alt="Sunny Days Companion Services"
+            class="h-16 w-auto object-contain"
+          />
+        </div>
+      </a>
 
-	<nav>
-		<svg viewBox="0 0 2 3" aria-hidden="true">
-			<path d="M0,0 L1,2 C1.5,3 1.5,3 2,3 L2,0 Z" />
-		</svg>
-		<ul>
-			<li class:active={$page.url.pathname === '/'}><a sveltekit:prefetch href="/">Home</a></li>
-			<li class:active={$page.url.pathname === '/about'}>
-				<a sveltekit:prefetch href="/about">About</a>
-			</li>
-			<li class:active={$page.url.pathname === '/todos'}>
-				<a sveltekit:prefetch href="/todos">Todos</a>
-			</li>
-		</ul>
-		<svg viewBox="0 0 2 3" aria-hidden="true">
-			<path d="M0,0 L0,3 C0.5,3 0.5,3 1,2 L2,0 Z" />
-		</svg>
-	</nav>
+      <!-- Desktop Navigation -->
+      <nav class="hidden md:flex items-center space-x-1">
+        {#each navItems as item}
+          <a
+            href={item.href}
+            data-sveltekit-preload-data
+            class="px-4 py-2 rounded-lg font-medium text-warmGray-700 hover:text-orange hover:bg-orange/5 transition-colors {$page
+              .url.pathname === item.href
+              ? 'text-orange bg-orange/10'
+              : ''}"
+          >
+            {item.label}
+          </a>
+        {/each}
+        <a href="/connect" class="btn-primary ml-4">Get Started</a>
+      </nav>
 
-	<div class="corner">
-		<!-- TODO put something else here? github link? -->
-	</div>
+      <!-- Mobile Menu Button -->
+      <button
+        class="md:hidden p-2 rounded-lg text-warmGray-700 hover:bg-warmGray-100 transition-colors"
+        on:click={toggleMenu}
+        aria-label="Toggle menu"
+      >
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          {#if mobileMenuOpen}
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M6 18L18 6M6 6l12 12"
+            />
+          {:else}
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M4 6h16M4 12h16M4 18h16"
+            />
+          {/if}
+        </svg>
+      </button>
+    </div>
+
+  </div>
+
+  <!-- Mobile Navigation Overlay -->
+  {#if mobileMenuOpen}
+    <div
+      class="fixed inset-0 bg-black bg-opacity-50 z-40 md:hidden"
+      on:click={closeMenu}
+      on:keydown={(e) => e.key === 'Escape' && closeMenu()}
+      role="button"
+      tabindex="0"
+      aria-label="Close menu"
+    ></div>
+  {/if}
+
+  <!-- Mobile Navigation Drawer -->
+  <nav
+    class="fixed top-0 left-0 h-full w-full bg-white shadow-2xl z-50 md:hidden transform transition-transform duration-300 ease-in-out {mobileMenuOpen
+      ? 'translate-x-0'
+      : '-translate-x-full'}"
+  >
+    <div class="p-6">
+      <div class="flex items-center justify-between mb-8">
+        <div class="h-12 flex items-center">
+          <img
+            src="/images/logo.webp"
+            alt="Sunny Days Companion Services"
+            class="h-12 w-auto object-contain"
+          />
+        </div>
+        <button
+          on:click={closeMenu}
+          class="p-2 rounded-lg text-warmGray-700 hover:bg-warmGray-100 transition-colors"
+          aria-label="Close menu"
+        >
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M6 18L18 6M6 6l12 12"
+            />
+          </svg>
+        </button>
+      </div>
+
+      <div class="space-y-2">
+        {#each navItems as item}
+          <a
+            href={item.href}
+            data-sveltekit-preload-data
+            on:click={closeMenu}
+            class="block px-4 py-3 rounded-lg font-medium text-warmGray-700 hover:text-orange hover:bg-orange/5 transition-colors {$page
+              .url.pathname === item.href
+              ? 'text-orange bg-orange/10'
+              : ''}"
+          >
+            {item.label}
+          </a>
+        {/each}
+        <a href="/connect" class="btn-primary w-full mt-4 block text-center" on:click={closeMenu}
+          >Get Started</a
+        >
+      </div>
+    </div>
+  </nav>
 </header>
-
-<style>
-	header {
-		display: flex;
-		justify-content: space-between;
-	}
-
-	.corner {
-		width: 3em;
-		height: 3em;
-	}
-
-	.corner a {
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		width: 100%;
-		height: 100%;
-	}
-
-	.corner img {
-		width: 2em;
-		height: 2em;
-		object-fit: contain;
-	}
-
-	nav {
-		display: flex;
-		justify-content: center;
-		--background: rgba(255, 255, 255, 0.7);
-	}
-
-	svg {
-		width: 2em;
-		height: 3em;
-		display: block;
-	}
-
-	path {
-		fill: var(--background);
-	}
-
-	ul {
-		position: relative;
-		padding: 0;
-		margin: 0;
-		height: 3em;
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		list-style: none;
-		background: var(--background);
-		background-size: contain;
-	}
-
-	li {
-		position: relative;
-		height: 100%;
-	}
-
-	li.active::before {
-		--size: 6px;
-		content: '';
-		width: 0;
-		height: 0;
-		position: absolute;
-		top: 0;
-		left: calc(50% - var(--size));
-		border: var(--size) solid transparent;
-		border-top: var(--size) solid var(--accent-color);
-	}
-
-	nav a {
-		display: flex;
-		height: 100%;
-		align-items: center;
-		padding: 0 1em;
-		color: var(--heading-color);
-		font-weight: 700;
-		font-size: 0.8rem;
-		text-transform: uppercase;
-		letter-spacing: 0.1em;
-		text-decoration: none;
-		transition: color 0.2s linear;
-	}
-
-	a:hover {
-		color: var(--accent-color);
-	}
-</style>
