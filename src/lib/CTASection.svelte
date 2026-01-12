@@ -17,12 +17,12 @@
 			<p class="{backgroundStyle === 'orange' ? 'text-white/90' : backgroundStyle === 'gold' ? 'text-warmGray-800' : 'text-warmGray-700'} text-lg mb-8">
 				{description}
 			</p>
-			<div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
-				<a href={primaryButtonLink} class="{backgroundStyle === 'orange' ? 'btn bg-white text-orange hover:bg-warmGray-100' : backgroundStyle === 'gold' ? 'btn-primary' : 'btn-primary'}">
+			<div class="flex flex-col sm:flex-row gap-4 justify-center items-stretch w-full sm:w-auto px-4 sm:px-0">
+				<a href={primaryButtonLink} class="{backgroundStyle === 'orange' ? 'btn bg-white text-orange hover:bg-warmGray-100' : backgroundStyle === 'gold' ? 'btn-primary' : 'btn-primary'} w-full sm:w-auto">
 					{primaryButtonText}
 				</a>
 				{#if secondaryButtonText}
-					<a href={secondaryButtonLink} class="{backgroundStyle === 'orange' ? 'btn border-2 border-white text-white hover:bg-white hover:text-orange' : 'btn-outline'}">
+					<a href={secondaryButtonLink} class="{backgroundStyle === 'orange' ? 'btn border-2 border-white text-white hover:bg-white hover:text-orange' : 'btn-outline'} w-full sm:w-auto">
 						{secondaryButtonText}
 					</a>
 				{/if}

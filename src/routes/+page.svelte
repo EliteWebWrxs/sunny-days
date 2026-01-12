@@ -19,21 +19,21 @@
   style="background-image: url('/images/hero-2.webp'); background-size: cover; background-position: center;"
 >
   <!-- Background Image Overlay (adjust opacity as needed) -->
-  <div class="absolute inset-0 bg-gradient-to-br from-white/50 via-white/40 to-white/50 z-0"></div>
+  <div class="absolute inset-0 bg-gradient-to-br from-warmGray-900/60 via-warmGray-900/50 to-warmGray-900/60 z-0"></div>
 
   <div class="absolute top-0 right-0 w-96 h-96 bg-gold/10 rounded-full blur-3xl -z-10"></div>
   <div class="absolute bottom-0 left-0 w-96 h-96 bg-orange/10 rounded-full blur-3xl -z-10"></div>
 
   <div class="container-custom relative z-10">
     <div class="max-w-4xl mx-auto text-center">
-      <h1 class="mb-6 animate-fade-in">Bringing Warmth & Companionship to Every Day</h1>
-      <p class="text-xl md:text-2xl text-warmGray-700 mb-8 leading-relaxed">
+      <h1 class="mb-6 animate-fade-in text-white">Bringing Warmth & Companionship to Every Day</h1>
+      <p class="text-xl md:text-2xl text-white/90 mb-8 leading-relaxed">
         Professional companion care services designed to enhance quality of life, provide meaningful
         connections, and support independent living with dignity and joy.
       </p>
-      <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
-        <a href="/connect" class="btn-primary text-lg px-8 py-4">Get Started Today</a>
-        <a href="/services" class="btn-outline text-lg px-8 py-4 bg-white">Explore Our Services</a>
+      <div class="flex flex-col sm:flex-row gap-4 justify-center items-stretch w-full sm:w-auto px-4 sm:px-0">
+        <a href="/connect" class="btn-primary text-lg px-8 py-4 w-full sm:w-auto">Get Started Today</a>
+        <a href="/services" class="btn-outline text-lg px-8 py-4 bg-white w-full sm:w-auto">Explore Our Services</a>
       </div>
     </div>
   </div>

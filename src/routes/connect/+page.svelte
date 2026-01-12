@@ -54,12 +54,12 @@
   style="background-image: url('/images/heroImage-1.webp'); background-size: cover; background-position: top;"
 >
   <!-- Background Image Overlay (adjust opacity as needed) -->
-  <div class="absolute inset-0 bg-gradient-to-br from-white/50 via-white/40 to-white/50 z-0"></div>
+  <div class="absolute inset-0 bg-gradient-to-br from-warmGray-900/60 via-warmGray-900/50 to-warmGray-900/60 z-0"></div>
 
   <div class="container-custom relative z-10">
     <div class="max-w-3xl mx-auto text-center">
-      <h1 class="mb-4">Let's Connect</h1>
-      <p class="text-xl text-warmGray-700 leading-relaxed">
+      <h1 class="mb-4 text-white">Let's Connect</h1>
+      <p class="text-xl text-white/90 leading-relaxed">
         We'd love to hear from you. Whether you have questions about our services or want to
         schedule a consultation, we're here to help.
       </p>
