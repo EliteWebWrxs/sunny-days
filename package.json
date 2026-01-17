@@ -26,6 +26,7 @@
   "type": "module",
   "dependencies": {
     "@fontsource/fira-mono": "^5.1.0",
+    "nodemailer": "^7.0.12",
     "web-vitals": "^4.2.4"
   }
 }

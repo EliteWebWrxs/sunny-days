@@ -36,6 +36,33 @@
               >Connect</a
             >
           </li>
+          <li>
+            <a
+              href="https://sunnydayscare.caresmartz360.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="text-warmGray-400 hover:text-gold transition-colors text-sm"
+              >Staff Portal</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://sunnydayscarecp.caresmartz360.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="text-warmGray-400 hover:text-gold transition-colors text-sm"
+              >Client Portal</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://sunnydayscare.caresmartz360.com/prospectivecaregiver/caregiverapplicantform.aspx"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="text-warmGray-400 hover:text-gold transition-colors text-sm"
+              >Join Our Team</a
+            >
+          </li>
         </ul>
       </div>
 
@@ -103,10 +130,12 @@
     </div>
 
     <!-- Bottom Bar -->
-    <div class="border-t border-warmGray-800 mt-8 pt-8">
+    <div class="border-t border-warmGray-500 mt-8 pt-8">
       <div class="text-center text-warmGray-500 text-sm">
-        <p class="mb-2">Serving Hardee, Highlands, Hillsborough, Manatee, and Polk Counties</p>
-        <p>
+        <p class="mb-2 text-warmGray-500">
+          Serving Hardee, Highlands, Hillsborough, Manatee, and Polk Counties
+        </p>
+        <p class="text-warmGray-500">
           &copy; {new Date().getFullYear()} Sunny Days Companion Services. Bringing warmth and care to
           every day.
         </p>

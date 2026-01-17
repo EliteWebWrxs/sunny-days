@@ -389,6 +389,86 @@
           </div>
         </div>
       </div>
+
+      <!-- Service 6: Travel Companions -->
+      <div class="bg-white rounded-2xl shadow-md hover:shadow-lg transition-shadow overflow-hidden">
+        <div class="md:flex md:flex-row-reverse">
+          <div
+            class="md:w-1/3 bg-gradient-to-br from-gold/20 to-orange/20 flex items-center justify-center overflow-hidden"
+          >
+            <img
+              src="/images/travel.webp"
+              alt="Travel Companions"
+              class="w-full h-full object-cover"
+            />
+          </div>
+          <div class="md:w-2/3 p-8">
+            <h3 class="mb-3">Travel Companions</h3>
+            <p class="text-warmGray-700 mb-4 leading-relaxed">
+              Traveling Aide, to provide light assistance, or specialized support, our services are
+              designed to ensure safety, dignity, and peace of mind throughout your trip.
+            </p>
+            <ul class="space-y-2">
+              <li class="flex items-start">
+                <svg
+                  class="w-5 h-5 text-orange mt-0.5 mr-2 flex-shrink-0"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                    clip-rule="evenodd"
+                  />
+                </svg>
+                <span class="text-warmGray-700"
+                  >For travelers who value a reassuring, steady presence without needing hands-on
+                  care. We offer guidance through airports and transportation hubs, help managing
+                  schedules and reservations, and provide emotional support to ease anxiety and
+                  enhance comfort.</span
+                >
+              </li>
+              <li class="flex items-start">
+                <svg
+                  class="w-5 h-5 text-orange mt-0.5 mr-2 flex-shrink-0"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                    clip-rule="evenodd"
+                  />
+                </svg>
+                <span class="text-warmGray-700"
+                  >Vacation Companion designed to provide peace of mind during vacations, family
+                  events, or cruises. This service includes daily companionship, support during
+                  outings, and gentle assistance to help clients fully enjoy their travel
+                  experience.</span
+                >
+              </li>
+              <li class="flex items-start">
+                <svg
+                  class="w-5 h-5 text-orange mt-0.5 mr-2 flex-shrink-0"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                    clip-rule="evenodd"
+                  />
+                </svg>
+                <span class="text-warmGray-700"
+                  >Recovery Travel Support for clients traveling before, during, or after medical
+                  procedures. We offer medication reminders, post-surgical support, and communication
+                  with family or healthcare providers to ensure a smooth and safe journey.</span
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </section>

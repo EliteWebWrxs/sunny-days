@@ -33,7 +33,8 @@
       </a>
 
       <!-- Desktop Navigation -->
-      <nav class="hidden md:flex items-center space-x-1">
+      <nav class="hidden lg:flex items-center space-x-2">
+        <!-- Main Navigation -->
         {#each navItems as item}
           <a
             href={item.href}
@@ -46,7 +47,45 @@
             {item.label}
           </a>
         {/each}
-        <a href="/connect" class="btn-primary ml-4">Get Started</a>
+
+        <!-- Primary CTA -->
+        <a href="/connect" class="btn-primary ml-2">Get Started</a>
+
+        <!-- Divider -->
+        <div class="h-6 w-px bg-warmGray-300 mx-3"></div>
+
+        <!-- Quick Links -->
+        <div class="flex items-center space-x-1">
+          <a
+            href="https://sunnydayscare.caresmartz360.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="px-3 py-2 rounded-lg text-sm font-medium text-warmGray-600 hover:text-orange hover:bg-orange/5 transition-colors"
+          >
+            Staff
+          </a>
+          <a
+            href="https://sunnydayscarecp.caresmartz360.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="px-3 py-2 rounded-lg text-sm font-medium text-warmGray-600 hover:text-orange hover:bg-orange/5 transition-colors"
+          >
+            Client
+          </a>
+          <a
+            href="https://sunnydayscare.caresmartz360.com/prospectivecaregiver/caregiverapplicantform.aspx"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="px-3 py-2 rounded-lg text-sm font-medium text-warmGray-600 hover:text-orange hover:bg-orange/5 transition-colors"
+          >
+            Careers
+          </a>
+        </div>
+      </nav>
+
+      <!-- Tablet Navigation (simplified) -->
+      <nav class="hidden md:flex lg:hidden items-center space-x-2">
+        <a href="/connect" class="btn-primary">Get Started</a>
       </nav>
 
       <!-- Mobile Menu Button -->
@@ -121,6 +160,7 @@
       </div>
 
       <div class="space-y-2">
+        <!-- Main Navigation -->
         {#each navItems as item}
           <a
             href={item.href}
@@ -134,9 +174,48 @@
             {item.label}
           </a>
         {/each}
+
+        <!-- Primary CTA -->
         <a href="/connect" class="btn-primary w-full mt-4 block text-center" on:click={closeMenu}
           >Get Started</a
         >
+
+        <!-- Divider -->
+        <div class="h-px bg-warmGray-300 my-6"></div>
+
+        <!-- Quick Links Section -->
+        <div class="mb-3">
+          <p class="text-xs font-semibold text-warmGray-500 uppercase tracking-wider px-4 mb-2">
+            Quick Links
+          </p>
+          <a
+            href="https://sunnydayscare.caresmartz360.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            on:click={closeMenu}
+            class="block px-4 py-3 rounded-lg font-medium text-warmGray-700 hover:text-orange hover:bg-orange/5 transition-colors"
+          >
+            Staff Portal
+          </a>
+          <a
+            href="https://sunnydayscarecp.caresmartz360.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            on:click={closeMenu}
+            class="block px-4 py-3 rounded-lg font-medium text-warmGray-700 hover:text-orange hover:bg-orange/5 transition-colors"
+          >
+            Client Portal
+          </a>
+          <a
+            href="https://sunnydayscare.caresmartz360.com/prospectivecaregiver/caregiverapplicantform.aspx"
+            target="_blank"
+            rel="noopener noreferrer"
+            on:click={closeMenu}
+            class="block px-4 py-3 rounded-lg font-medium text-warmGray-700 hover:text-orange hover:bg-orange/5 transition-colors"
+          >
+            Join Our Team
+          </a>
+        </div>
       </div>
     </div>
   </nav>

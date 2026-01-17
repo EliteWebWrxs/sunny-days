@@ -19,7 +19,9 @@
   style="background-image: url('/images/hero-2.webp'); background-size: cover; background-position: center;"
 >
   <!-- Background Image Overlay (adjust opacity as needed) -->
-  <div class="absolute inset-0 bg-gradient-to-br from-warmGray-900/60 via-warmGray-900/50 to-warmGray-900/60 z-0"></div>
+  <div
+    class="absolute inset-0 bg-gradient-to-br from-warmGray-900/60 via-warmGray-900/50 to-warmGray-900/60 z-0"
+  ></div>
 
   <div class="absolute top-0 right-0 w-96 h-96 bg-gold/10 rounded-full blur-3xl -z-10"></div>
   <div class="absolute bottom-0 left-0 w-96 h-96 bg-orange/10 rounded-full blur-3xl -z-10"></div>
@@ -31,9 +33,15 @@
         Professional companion care services designed to enhance quality of life, provide meaningful
         connections, and support independent living with dignity and joy.
       </p>
-      <div class="flex flex-col sm:flex-row gap-4 justify-center items-stretch w-full sm:w-auto px-4 sm:px-0">
-        <a href="/connect" class="btn-primary text-lg px-8 py-4 w-full sm:w-auto">Get Started Today</a>
-        <a href="/services" class="btn-outline text-lg px-8 py-4 bg-white w-full sm:w-auto">Explore Our Services</a>
+      <div
+        class="flex flex-col sm:flex-row gap-4 justify-center items-stretch w-full sm:w-auto px-4 sm:px-0"
+      >
+        <a href="/connect" class="btn-primary text-lg px-8 py-4 w-full sm:w-auto"
+          >Get Started Today</a
+        >
+        <a href="/services" class="btn-outline text-lg px-8 py-4 bg-white w-full sm:w-auto"
+          >Explore Our Services</a
+        >
       </div>
     </div>
   </div>
@@ -381,7 +389,8 @@
         class="bg-gradient-to-r from-gold/10 to-orange/10 rounded-xl p-6 border border-gold/20 inline-block"
       >
         <p class="text-warmGray-800 font-medium">
-          <span class="text-orange font-bold">Licensed & Certified</span> | Florida AHCA License #240843
+          <span class="text-orange font-bold">Licensed, Certified & Bonded</span> | Florida AHCA License
+          #240843
         </p>
       </div>
     </div>

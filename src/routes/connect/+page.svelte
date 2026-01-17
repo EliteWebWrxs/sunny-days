@@ -11,27 +11,47 @@
   };
 
   let formStatus = 'idle'; // 'idle', 'submitting', 'success', 'error'
+  let errorMessage = '';
 
   // @ts-ignore
-  function handleSubmit(event) {
+  async function handleSubmit(event) {
     event.preventDefault();
     formStatus = 'submitting';
+    errorMessage = '';
 
-    // In production, this would send to your email service
-    setTimeout(() => {
-      formStatus = 'success';
-      // Reset form
-      formData = {
-        firstName: '',
-        lastName: '',
-        email: '',
-        phone: '',
-        preferredContact: 'phone',
-        serviceInterest: '',
-        bestTimeToCall: '',
-        message: ''
-      };
-    }, 1000);
+    try {
+      const response = await fetch('/api/contact', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(formData)
+      });
+
+      const result = await response.json();
+
+      if (result.success) {
+        formStatus = 'success';
+        // Reset form
+        formData = {
+          firstName: '',
+          lastName: '',
+          email: '',
+          phone: '',
+          preferredContact: 'phone',
+          serviceInterest: '',
+          bestTimeToCall: '',
+          message: ''
+        };
+      } else {
+        formStatus = 'error';
+        errorMessage = 'Failed to send message. Please try again or call us directly.';
+      }
+    } catch (error) {
+      formStatus = 'error';
+      errorMessage = 'Failed to send message. Please try again or call us directly.';
+      console.error('Form submission error:', error);
+    }
   }
 
   function resetForm() {
@@ -54,7 +74,9 @@
   style="background-image: url('/images/heroImage-1.webp'); background-size: cover; background-position: top;"
 >
   <!-- Background Image Overlay (adjust opacity as needed) -->
-  <div class="absolute inset-0 bg-gradient-to-br from-warmGray-900/60 via-warmGray-900/50 to-warmGray-900/60 z-0"></div>
+  <div
+    class="absolute inset-0 bg-gradient-to-br from-warmGray-900/60 via-warmGray-900/50 to-warmGray-900/60 z-0"
+  ></div>
 
   <div class="container-custom relative z-10">
     <div class="max-w-3xl mx-auto text-center">
@@ -94,9 +116,9 @@
           <p class="text-warmGray-600 text-sm">Monday - Friday, 8am - 5pm</p>
         </a>
 
-        <!-- Address -->
+        <!-- Schedule Televisit -->
         <a
-          href="https://maps.google.com/?q=13194+US+Highway+301+South+Suite+170+Riverview+FL+33578"
+          href="https://outlook.office.com/bookwithme/user/116080fcb381447a86b444a034df8b3b@sunnydayscare.com?anonymous&ismsaljsauthenabled&ep=pcard"
           target="_blank"
           rel="noopener noreferrer"
           class="bg-gradient-to-br from-gold/10 to-orange/10 rounded-2xl p-6 border-2 border-gold/20 hover:border-orange/40 transition-all group"
@@ -109,21 +131,13 @@
                 stroke-linecap="round"
                 stroke-linejoin="round"
                 stroke-width="2"
-                d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"
-              />
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"
+                d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"
               />
             </svg>
           </div>
-          <h3 class="text-lg font-semibold text-warmGray-900 mb-2">Visit Us</h3>
+          <h3 class="text-lg font-semibold text-warmGray-900 mb-2">Schedule a Televisit</h3>
           <p class="text-warmGray-700 text-sm leading-relaxed">
-            13194 US Highway 301 South<br />
-            Suite 170<br />
-            Riverview, FL 33578
+            Book your virtual consultation online at a time that works for you
           </p>
         </a>
 
@@ -143,7 +157,7 @@
               />
             </svg>
           </div>
-          <h3 class="text-lg font-semibold text-warmGray-900 mb-2">Licensed & Certified</h3>
+          <h3 class="text-lg font-semibold text-warmGray-900 mb-2">Licensed, Certified & Bonded</h3>
           <p class="text-warmGray-700 text-sm mb-1">Florida AHCA License</p>
           <p class="text-orange font-bold text-lg">#240843</p>
         </div>
@@ -187,27 +201,6 @@
           <p class="font-semibold text-warmGray-900">Polk</p>
           <p class="text-xs text-warmGray-600">County</p>
         </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- Map Section -->
-<section class="section bg-white">
-  <div class="container-custom">
-    <div class="max-w-5xl mx-auto">
-      <h2 class="text-center mb-8">Find Us</h2>
-      <div class="rounded-2xl overflow-hidden shadow-lg border border-warmGray-200">
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3529.2!2d-82.3261!3d27.8422!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88c2d0e5e5e5e5e5%3A0x5e5e5e5e5e5e5e5e!2s13194%20US%20Hwy%20301%20S%20%23170%2C%20Riverview%2C%20FL%2033578!5e0!3m2!1sen!2sus!4v1234567890"
-          width="100%"
-          height="450"
-          style="border:0;"
-          allowfullscreen=""
-          loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade"
-          title="Sunny Days Companion Services Location"
-        ></iframe>
       </div>
     </div>
   </div>
@@ -272,6 +265,32 @@
           </button>
         </div>
       {:else}
+        {#if formStatus === 'error'}
+          <div
+            class="bg-gradient-to-br from-red-50 to-red-100 border-2 border-red-300 rounded-2xl p-6 mb-6"
+          >
+            <div class="flex items-start">
+              <svg
+                class="w-6 h-6 text-red-500 mt-0.5 mr-3 flex-shrink-0"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M12 8v4m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+                />
+              </svg>
+              <div>
+                <h4 class="text-red-900 font-semibold mb-1">Unable to Send Message</h4>
+                <p class="text-red-800 text-sm">{errorMessage}</p>
+              </div>
+            </div>
+          </div>
+        {/if}
+
         <form
           on:submit={handleSubmit}
           class="bg-white rounded-2xl shadow-lg p-8 border border-warmGray-200"
@@ -385,6 +404,7 @@
               class="w-full px-4 py-3 border-2 border-warmGray-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-orange focus:border-transparent transition-all bg-white"
             >
               <option value="">Select a service</option>
+              <option value="Travel Companion">Travel Companion</option>
               <option value="companionship">Companionship & Conversation</option>
               <option value="meals">Meal Preparation</option>
               <option value="housekeeping">Light Housekeeping</option>
