@@ -1,15 +1,28 @@
 <script>
   import CTASection from '$lib/CTASection.svelte';
   import FAQ from '$lib/FAQ.svelte';
+  import SEO from '$lib/SEO.svelte';
+  import { servicesSchema, getBreadcrumbSchema } from '$lib/schema.js';
+
+  const breadcrumbs = getBreadcrumbSchema([
+    { name: 'Home', url: 'https://sunnydayscare.com' },
+    { name: 'Services', url: 'https://sunnydayscare.com/services' }
+  ]);
+
+  const combinedSchema = {
+    '@context': 'https://schema.org',
+    '@graph': [servicesSchema, breadcrumbs]
+  };
 </script>
 
-<svelte:head>
-  <title>Our Services - Sunny Days Companion Services</title>
-  <meta
-    name="description"
-    content="Sunny Days offers comprehensive companion care services including companionship, meal preparation, light housekeeping, transportation, and medication reminders."
-  />
-</svelte:head>
+<SEO
+  title="Companion Care Services - Sunny Days | Central Florida"
+  description="Comprehensive companion care services including companionship, meal preparation, light housekeeping, transportation, medication reminders, and travel companions. Serving Central Florida counties."
+  url="https://sunnydayscare.com/services"
+  image="https://sunnydayscare.com/images/hero-6.webp"
+  type="website"
+  schema={combinedSchema}
+/>
 
 <!-- Hero Section -->
 <section

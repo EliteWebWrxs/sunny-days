@@ -2,15 +2,23 @@
   import CTASection from '$lib/CTASection.svelte';
   import Testimonials from '$lib/Testimonials.svelte';
   import FAQ from '$lib/FAQ.svelte';
+  import SEO from '$lib/SEO.svelte';
+  import { organizationSchema, localBusinessSchema } from '$lib/schema.js';
+
+  const combinedSchema = {
+    '@context': 'https://schema.org',
+    '@graph': [organizationSchema, localBusinessSchema]
+  };
 </script>
 
-<svelte:head>
-  <title>Sunny Days Companion Services - Compassionate Care for Your Loved Ones</title>
-  <meta
-    name="description"
-    content="Sunny Days Companion Services provides warm, professional companion care to enhance quality of life. Offering companionship, meal prep, errands, and more."
-  />
-</svelte:head>
+<SEO
+  title="Sunny Days Companion Services - Compassionate Care for Your Loved Ones in Central Florida"
+  description="Professional companion care services in Hardee, Highlands, Hillsborough, Manatee, and Polk Counties. Licensed & certified. Offering companionship, meal prep, transportation, and more."
+  url="https://sunnydayscare.com"
+  image="https://sunnydayscare.com/images/hero-2.webp"
+  type="website"
+  schema={combinedSchema}
+/>
 
 <!-- Hero Section -->
 <!-- TO ADD YOUR IMAGE: Replace the background classes below with: style="background-image: url('/images/your-hero-image.jpg'); background-size: cover; background-position: center;" -->

@@ -1,4 +1,7 @@
 <script>
+  import SEO from '$lib/SEO.svelte';
+  import { contactPageSchema, getBreadcrumbSchema } from '$lib/schema.js';
+
   let formData = {
     firstName: '',
     lastName: '',
@@ -57,15 +60,26 @@
   function resetForm() {
     formStatus = 'idle';
   }
+
+  const breadcrumbs = getBreadcrumbSchema([
+    { name: 'Home', url: 'https://sunnydayscare.com' },
+    { name: 'Connect', url: 'https://sunnydayscare.com/connect' }
+  ]);
+
+  const combinedSchema = {
+    '@context': 'https://schema.org',
+    '@graph': [contactPageSchema, breadcrumbs]
+  };
 </script>
 
-<svelte:head>
-  <title>Connect With Us - Sunny Days Companion Services</title>
-  <meta
-    name="description"
-    content="Get in touch with Sunny Days Companion Services. We're here to answer your questions and discuss how we can support you or your loved ones."
-  />
-</svelte:head>
+<SEO
+  title="Connect With Us - Sunny Days Companion Services | Free Consultation"
+  description="Get in touch with Sunny Days Companion Services in Central Florida. Request a free consultation, schedule a televisit, or call us at 813-433-0688. We're here to help."
+  url="https://sunnydayscare.com/connect"
+  image="https://sunnydayscare.com/images/heroImage-1.webp"
+  type="website"
+  schema={combinedSchema}
+/>
 
 <!-- Hero Section -->
 <!-- TO ADD YOUR IMAGE: Add style="background-image: url('/images/connect-hero.jpg');" to the section tag below -->
