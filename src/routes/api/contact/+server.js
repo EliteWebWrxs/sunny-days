@@ -19,7 +19,7 @@ export async function POST({ request }) {
     // Email content
     const mailOptions = {
       from: `"Sunny Days Contact Form" <${GOOGLE_EMAIL}>`,
-      to: 'mrmichael423@icloud.com',
+      to: 'inquiry@sunmydayscare.com',
       subject: `New Contact Form Submission - ${formData.firstName} ${formData.lastName}`,
       html: `
         <h2>New Contact Form Submission</h2>
