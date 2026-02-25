@@ -10,7 +10,7 @@ export const organizationSchema = {
   description:
     'Professional companion care services designed to enhance quality of life, provide meaningful connections, and support independent living with dignity and joy.',
   telephone: '+1-813-433-0688',
-  email: 'inquiry@sunnydayscare.com',
+  email: 'tharrison@sunnydayscare.com',
   address: {
     '@type': 'PostalAddress',
     streetAddress: '13194 US Highway 301 South, Suite 170',
@@ -216,7 +216,7 @@ export const contactPageSchema = {
     '@type': 'HomeHealthAgency',
     name: 'Sunny Days Companion Services',
     telephone: '+1-813-433-0688',
-    email: 'inquiry@sunnydayscare.com',
+    email: 'tharrison@sunnydayscare.com',
     address: {
       '@type': 'PostalAddress',
       streetAddress: '13194 US Highway 301 South, Suite 170',
