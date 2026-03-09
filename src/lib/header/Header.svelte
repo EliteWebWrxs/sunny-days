@@ -39,9 +39,9 @@
           <a
             href={item.href}
             data-sveltekit-preload-data
-            class="px-4 py-2 rounded-lg font-medium text-warmGray-700 hover:text-orange hover:bg-orange/5 transition-colors {$page
+            class="px-4 py-2 rounded-lg font-medium text-warmGray-700 hover:text-blue-600 hover:bg-blue-600/5 transition-colors {$page
               .url.pathname === item.href
-              ? 'text-orange bg-orange/10'
+              ? 'text-blue-600 bg-blue-600/10'
               : ''}"
           >
             {item.label}
@@ -60,7 +60,7 @@
             href="https://sunnydayscare.caresmartz360.com"
             target="_blank"
             rel="noopener noreferrer"
-            class="px-3 py-2 rounded-lg text-sm font-medium text-warmGray-600 hover:text-orange hover:bg-orange/5 transition-colors"
+            class="px-3 py-2 rounded-lg text-sm font-medium text-warmGray-600 hover:text-blue-600 hover:bg-blue-600/5 transition-colors"
           >
             Staff
           </a>
@@ -68,7 +68,7 @@
             href="https://sunnydayscarecp.caresmartz360.com"
             target="_blank"
             rel="noopener noreferrer"
-            class="px-3 py-2 rounded-lg text-sm font-medium text-warmGray-600 hover:text-orange hover:bg-orange/5 transition-colors"
+            class="px-3 py-2 rounded-lg text-sm font-medium text-warmGray-600 hover:text-blue-600 hover:bg-blue-600/5 transition-colors"
           >
             Client
           </a>
@@ -76,7 +76,7 @@
             href="https://sunnydayscare.caresmartz360.com/prospectivecaregiver/caregiverapplicantform.aspx"
             target="_blank"
             rel="noopener noreferrer"
-            class="px-3 py-2 rounded-lg text-sm font-medium text-warmGray-600 hover:text-orange hover:bg-orange/5 transition-colors"
+            class="px-3 py-2 rounded-lg text-sm font-medium text-warmGray-600 hover:text-blue-600 hover:bg-blue-600/5 transition-colors"
           >
             Careers
           </a>
@@ -166,9 +166,9 @@
             href={item.href}
             data-sveltekit-preload-data
             on:click={closeMenu}
-            class="block px-4 py-3 rounded-lg font-medium text-warmGray-700 hover:text-orange hover:bg-orange/5 transition-colors {$page
+            class="block px-4 py-3 rounded-lg font-medium text-warmGray-700 hover:text-blue-600 hover:bg-blue-600/5 transition-colors {$page
               .url.pathname === item.href
-              ? 'text-orange bg-orange/10'
+              ? 'text-blue-600 bg-blue-600/10'
               : ''}"
           >
             {item.label}
@@ -193,7 +193,7 @@
             target="_blank"
             rel="noopener noreferrer"
             on:click={closeMenu}
-            class="block px-4 py-3 rounded-lg font-medium text-warmGray-700 hover:text-orange hover:bg-orange/5 transition-colors"
+            class="block px-4 py-3 rounded-lg font-medium text-warmGray-700 hover:text-blue-600 hover:bg-blue-600/5 transition-colors"
           >
             Staff Portal
           </a>
@@ -202,7 +202,7 @@
             target="_blank"
             rel="noopener noreferrer"
             on:click={closeMenu}
-            class="block px-4 py-3 rounded-lg font-medium text-warmGray-700 hover:text-orange hover:bg-orange/5 transition-colors"
+            class="block px-4 py-3 rounded-lg font-medium text-warmGray-700 hover:text-blue-600 hover:bg-blue-600/5 transition-colors"
           >
             Client Portal
           </a>
@@ -211,7 +211,7 @@
             target="_blank"
             rel="noopener noreferrer"
             on:click={closeMenu}
-            class="block px-4 py-3 rounded-lg font-medium text-warmGray-700 hover:text-orange hover:bg-orange/5 transition-colors"
+            class="block px-4 py-3 rounded-lg font-medium text-warmGray-700 hover:text-blue-600 hover:bg-blue-600/5 transition-colors"
           >
             Join Our Team
           </a>

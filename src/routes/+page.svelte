@@ -23,7 +23,7 @@
 <!-- Hero Section -->
 <!-- TO ADD YOUR IMAGE: Replace the background classes below with: style="background-image: url('/images/your-hero-image.jpg'); background-size: cover; background-position: center;" -->
 <section
-  class="relative bg-gradient-to-br from-gold/10 via-orange/5 to-white section pt-20 pb-24 overflow-hidden md:bg-fixed"
+  class="relative bg-gradient-to-br from-blue-600/10 via-blue-500/5 to-white section pt-20 pb-24 overflow-hidden md:bg-fixed"
   style="background-image: url('/images/hero-2.webp'); background-size: cover; background-position: center;"
 >
   <!-- Background Image Overlay (adjust opacity as needed) -->
@@ -31,8 +31,8 @@
     class="absolute inset-0 bg-gradient-to-br from-warmGray-900/60 via-warmGray-900/50 to-warmGray-900/60 z-0"
   ></div>
 
-  <div class="absolute top-0 right-0 w-96 h-96 bg-gold/10 rounded-full blur-3xl -z-10"></div>
-  <div class="absolute bottom-0 left-0 w-96 h-96 bg-orange/10 rounded-full blur-3xl -z-10"></div>
+  <div class="absolute top-0 right-0 w-96 h-96 bg-blue-500/10 rounded-full blur-3xl -z-10"></div>
+  <div class="absolute bottom-0 left-0 w-96 h-96 bg-blue-600/10 rounded-full blur-3xl -z-10"></div>
 
   <div class="container-custom relative z-10">
     <div class="max-w-4xl mx-auto text-center">
@@ -71,7 +71,7 @@
     <div class="grid md:grid-cols-3 gap-8 mt-12">
       <div class="text-center">
         <div
-          class="w-16 h-16 bg-gradient-to-br from-gold to-orange rounded-2xl flex items-center justify-center mx-auto mb-4 shadow-lg"
+          class="w-16 h-16 bg-gradient-to-br from-blue-500 to-blue-600 rounded-2xl flex items-center justify-center mx-auto mb-4 shadow-lg"
         >
           <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path
@@ -91,7 +91,7 @@
 
       <div class="text-center">
         <div
-          class="w-16 h-16 bg-gradient-to-br from-gold to-orange rounded-2xl flex items-center justify-center mx-auto mb-4 shadow-lg"
+          class="w-16 h-16 bg-gradient-to-br from-blue-500 to-blue-600 rounded-2xl flex items-center justify-center mx-auto mb-4 shadow-lg"
         >
           <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path
@@ -111,7 +111,7 @@
 
       <div class="text-center">
         <div
-          class="w-16 h-16 bg-gradient-to-br from-gold to-orange rounded-2xl flex items-center justify-center mx-auto mb-4 shadow-lg"
+          class="w-16 h-16 bg-gradient-to-br from-blue-500 to-blue-600 rounded-2xl flex items-center justify-center mx-auto mb-4 shadow-lg"
         >
           <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path
@@ -135,7 +135,7 @@
 <!-- Image Section 1 - Companion Care -->
 <!-- TO ADD YOUR IMAGE: Add style="background-image: url('/images/companion-care.jpg');" to the section tag below -->
 <section
-  class="relative h-[500px] md:h-[600px] bg-gradient-to-r from-gold/20 to-orange/20 bg-cover bg-center bg-no-repeat md:bg-fixed"
+  class="relative h-[500px] md:h-[600px] bg-gradient-to-r from-blue-100 to-blue-200 bg-cover bg-center bg-no-repeat md:bg-fixed"
   style="background-image: url('/images/hero-3.webp'); background-size: cover; background-position: center;"
 >
   <!-- Overlay to ensure text readability (adjust opacity as needed) -->
@@ -165,9 +165,9 @@
       <div class="bg-white p-6 rounded-2xl shadow-sm hover:shadow-md transition-shadow">
         <div class="flex items-start space-x-4">
           <div
-            class="w-12 h-12 bg-gold/20 rounded-xl flex items-center justify-center flex-shrink-0"
+            class="w-12 h-12 bg-blue-100 rounded-xl flex items-center justify-center flex-shrink-0"
           >
-            <svg class="w-6 h-6 text-orange" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <svg class="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path
                 stroke-linecap="round"
                 stroke-linejoin="round"
@@ -188,9 +188,9 @@
       <div class="bg-white p-6 rounded-2xl shadow-sm hover:shadow-md transition-shadow">
         <div class="flex items-start space-x-4">
           <div
-            class="w-12 h-12 bg-gold/20 rounded-xl flex items-center justify-center flex-shrink-0"
+            class="w-12 h-12 bg-blue-100 rounded-xl flex items-center justify-center flex-shrink-0"
           >
-            <svg class="w-6 h-6 text-orange" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <svg class="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path
                 stroke-linecap="round"
                 stroke-linejoin="round"
@@ -212,9 +212,9 @@
       <div class="bg-white p-6 rounded-2xl shadow-sm hover:shadow-md transition-shadow">
         <div class="flex items-start space-x-4">
           <div
-            class="w-12 h-12 bg-gold/20 rounded-xl flex items-center justify-center flex-shrink-0"
+            class="w-12 h-12 bg-blue-100 rounded-xl flex items-center justify-center flex-shrink-0"
           >
-            <svg class="w-6 h-6 text-orange" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <svg class="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path
                 stroke-linecap="round"
                 stroke-linejoin="round"
@@ -236,9 +236,9 @@
       <div class="bg-white p-6 rounded-2xl shadow-sm hover:shadow-md transition-shadow">
         <div class="flex items-start space-x-4">
           <div
-            class="w-12 h-12 bg-gold/20 rounded-xl flex items-center justify-center flex-shrink-0"
+            class="w-12 h-12 bg-blue-100 rounded-xl flex items-center justify-center flex-shrink-0"
           >
-            <svg class="w-6 h-6 text-orange" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <svg class="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path
                 stroke-linecap="round"
                 stroke-linejoin="round"
@@ -273,7 +273,7 @@
 
       <div class="grid md:grid-cols-3 gap-8 text-center">
         <div class="p-6">
-          <div class="text-4xl font-display font-bold text-orange mb-2">100%</div>
+          <div class="text-4xl font-display font-bold text-blue-600 mb-2">100%</div>
           <div class="text-warmGray-900 font-semibold mb-2">Background Checked</div>
           <p class="text-sm text-warmGray-600">
             All companions undergo thorough screening and verification
@@ -281,7 +281,7 @@
         </div>
 
         <div class="p-6">
-          <div class="text-4xl font-display font-bold text-orange mb-2">Years</div>
+          <div class="text-4xl font-display font-bold text-blue-600 mb-2">Years</div>
           <div class="text-warmGray-900 font-semibold mb-2">of Experience</div>
           <p class="text-sm text-warmGray-600">
             Dedicated to providing compassionate companion care
@@ -289,7 +289,7 @@
         </div>
 
         <div class="p-6">
-          <div class="text-4xl font-display font-bold text-orange mb-2">24/7</div>
+          <div class="text-4xl font-display font-bold text-blue-600 mb-2">24/7</div>
           <div class="text-warmGray-900 font-semibold mb-2">Support Available</div>
           <p class="text-sm text-warmGray-600">
             We're here when you need us, providing reliability and peace of mind
@@ -298,11 +298,11 @@
       </div>
 
       <div
-        class="mt-12 bg-gradient-to-r from-gold/10 to-orange/10 rounded-2xl p-8 border border-gold/20"
+        class="mt-12 bg-gradient-to-r from-blue-50 to-blue-100 rounded-2xl p-8 border border-blue-200"
       >
         <div class="flex flex-col md:flex-row items-center gap-6">
           <div
-            class="w-20 h-20 bg-gradient-to-br from-gold to-orange rounded-2xl flex items-center justify-center flex-shrink-0 shadow-lg"
+            class="w-20 h-20 bg-gradient-to-br from-blue-500 to-blue-600 rounded-2xl flex items-center justify-center flex-shrink-0 shadow-lg"
           >
             <svg class="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path
@@ -332,7 +332,7 @@
 <!-- Image Section 2 - Community -->
 <!-- TO ADD YOUR IMAGE: Add style="background-image: url('/images/community-care.jpg');" to the section tag below -->
 <section
-  class="relative h-[500px] md:h-[600px] bg-gradient-to-r from-orange/20 to-gold/20 bg-cover bg-center bg-no-repeat md:bg-fixed"
+  class="relative h-[500px] md:h-[600px] bg-gradient-to-r from-blue-100 to-blue-200 bg-cover bg-center bg-no-repeat md:bg-fixed"
   style="background-image: url('/images/hero-4.webp'); background-size: cover; background-position: center;"
 >
   <!-- Overlay to ensure text readability (adjust opacity as needed) -->
@@ -394,10 +394,10 @@
         </div>
       </div>
       <div
-        class="bg-gradient-to-r from-gold/10 to-orange/10 rounded-xl p-6 border border-gold/20 inline-block"
+        class="bg-gradient-to-r from-blue-50 to-blue-100 rounded-xl p-6 border border-blue-200 inline-block"
       >
         <p class="text-warmGray-800 font-medium">
-          <span class="text-orange font-bold">Licensed, Certified & Bonded</span> | Florida AHCA License
+          <span class="text-blue-600 font-bold">Licensed, Certified & Bonded</span> | Florida AHCA License
           #240843
         </p>
       </div>

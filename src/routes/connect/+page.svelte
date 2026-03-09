@@ -84,7 +84,7 @@
 <!-- Hero Section -->
 <!-- TO ADD YOUR IMAGE: Add style="background-image: url('/images/connect-hero.jpg');" to the section tag below -->
 <section
-  class="relative bg-gradient-to-br from-gold/10 via-orange/5 to-white section pt-20 min-h-[500px] md:min-h-[600px] flex items-center bg-cover bg-center bg-no-repeat md:bg-fixed"
+  class="relative bg-gradient-to-br from-blue-600/10 via-blue-500/5 to-white section pt-20 min-h-[500px] md:min-h-[600px] flex items-center bg-cover bg-center bg-no-repeat md:bg-fixed"
   style="background-image: url('/images/heroImage-1.webp'); background-size: cover; background-position: top;"
 >
   <!-- Background Image Overlay (adjust opacity as needed) -->
@@ -111,10 +111,10 @@
         <!-- Phone -->
         <a
           href="tel:813-433-0688"
-          class="bg-gradient-to-br from-gold/10 to-orange/10 rounded-2xl p-6 border-2 border-gold/20 hover:border-orange/40 transition-all group"
+          class="bg-gradient-to-br from-blue-50 to-blue-100 rounded-2xl p-6 border-2 border-blue-200 hover:border-blue-400 transition-all group"
         >
           <div
-            class="w-14 h-14 bg-gradient-to-br from-gold to-orange rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform"
+            class="w-14 h-14 bg-gradient-to-br from-blue-500 to-blue-600 rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform"
           >
             <svg class="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path
@@ -126,7 +126,7 @@
             </svg>
           </div>
           <h3 class="text-lg font-semibold text-warmGray-900 mb-2">Call Us</h3>
-          <p class="text-orange font-bold text-xl mb-1">813-433-0688</p>
+          <p class="text-blue-600 font-bold text-xl mb-1">813-433-0688</p>
           <p class="text-warmGray-600 text-sm">Monday - Friday, 8am - 5pm</p>
         </a>
 
@@ -135,10 +135,10 @@
           href="https://outlook.office.com/bookwithme/user/116080fcb381447a86b444a034df8b3b@sunnydayscare.com?anonymous&ismsaljsauthenabled&ep=pcard"
           target="_blank"
           rel="noopener noreferrer"
-          class="bg-gradient-to-br from-gold/10 to-orange/10 rounded-2xl p-6 border-2 border-gold/20 hover:border-orange/40 transition-all group"
+          class="bg-gradient-to-br from-blue-50 to-blue-100 rounded-2xl p-6 border-2 border-blue-200 hover:border-blue-400 transition-all group"
         >
           <div
-            class="w-14 h-14 bg-gradient-to-br from-gold to-orange rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform"
+            class="w-14 h-14 bg-gradient-to-br from-blue-500 to-blue-600 rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform"
           >
             <svg class="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path
@@ -157,10 +157,10 @@
 
         <!-- License -->
         <div
-          class="bg-gradient-to-br from-gold/10 to-orange/10 rounded-2xl p-6 border-2 border-gold/20"
+          class="bg-gradient-to-br from-blue-50 to-blue-100 rounded-2xl p-6 border-2 border-blue-200"
         >
           <div
-            class="w-14 h-14 bg-gradient-to-br from-gold to-orange rounded-xl flex items-center justify-center mb-4"
+            class="w-14 h-14 bg-gradient-to-br from-blue-500 to-blue-600 rounded-xl flex items-center justify-center mb-4"
           >
             <svg class="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path
@@ -173,7 +173,7 @@
           </div>
           <h3 class="text-lg font-semibold text-warmGray-900 mb-2">Licensed, Certified & Bonded</h3>
           <p class="text-warmGray-700 text-sm mb-1">Florida AHCA License</p>
-          <p class="text-orange font-bold text-lg">#240843</p>
+          <p class="text-blue-600 font-bold text-lg">#240843</p>
         </div>
       </div>
     </div>
@@ -223,7 +223,7 @@
 <!-- Image Section - Ready to Help -->
 <!-- TO ADD YOUR IMAGE: Add style="background-image: url('/images/ready-to-help.jpg');" to the section tag below -->
 <section
-  class="relative h-[500px] md:h-[600px] bg-gradient-to-r from-gold/20 to-orange/20 bg-cover bg-center bg-no-repeat md:bg-fixed"
+  class="relative h-[500px] md:h-[600px] bg-gradient-to-r from-blue-100 to-blue-200 bg-cover bg-center bg-no-repeat md:bg-fixed"
   style="background-image: url('/images/toast.webp'); background-size: cover; background-position: top;"
 >
   <!-- Overlay to ensure text readability (adjust opacity as needed) -->
@@ -312,28 +312,28 @@
           <div class="grid md:grid-cols-2 gap-6 mb-6">
             <div>
               <label for="firstName" class="block text-sm font-semibold text-warmGray-900 mb-2">
-                First Name <span class="text-orange">*</span>
+                First Name <span class="text-blue-600">*</span>
               </label>
               <input
                 type="text"
                 id="firstName"
                 bind:value={formData.firstName}
                 required
-                class="w-full px-4 py-3 border-2 border-warmGray-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-orange focus:border-transparent transition-all"
+                class="w-full px-4 py-3 border-2 border-warmGray-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all"
                 placeholder="John"
               />
             </div>
 
             <div>
               <label for="lastName" class="block text-sm font-semibold text-warmGray-900 mb-2">
-                Last Name <span class="text-orange">*</span>
+                Last Name <span class="text-blue-600">*</span>
               </label>
               <input
                 type="text"
                 id="lastName"
                 bind:value={formData.lastName}
                 required
-                class="w-full px-4 py-3 border-2 border-warmGray-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-orange focus:border-transparent transition-all"
+                class="w-full px-4 py-3 border-2 border-warmGray-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all"
                 placeholder="Smith"
               />
             </div>
@@ -342,28 +342,28 @@
           <div class="grid md:grid-cols-2 gap-6 mb-6">
             <div>
               <label for="phone" class="block text-sm font-semibold text-warmGray-900 mb-2">
-                Phone Number <span class="text-orange">*</span>
+                Phone Number <span class="text-blue-600">*</span>
               </label>
               <input
                 type="tel"
                 id="phone"
                 bind:value={formData.phone}
                 required
-                class="w-full px-4 py-3 border-2 border-warmGray-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-orange focus:border-transparent transition-all"
+                class="w-full px-4 py-3 border-2 border-warmGray-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all"
                 placeholder="(813) 555-1234"
               />
             </div>
 
             <div>
               <label for="email" class="block text-sm font-semibold text-warmGray-900 mb-2">
-                Email Address <span class="text-orange">*</span>
+                Email Address <span class="text-blue-600">*</span>
               </label>
               <input
                 type="email"
                 id="email"
                 bind:value={formData.email}
                 required
-                class="w-full px-4 py-3 border-2 border-warmGray-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-orange focus:border-transparent transition-all"
+                class="w-full px-4 py-3 border-2 border-warmGray-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all"
                 placeholder="john@example.com"
               />
             </div>
@@ -380,7 +380,7 @@
               <select
                 id="preferredContact"
                 bind:value={formData.preferredContact}
-                class="w-full px-4 py-3 border-2 border-warmGray-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-orange focus:border-transparent transition-all bg-white"
+                class="w-full px-4 py-3 border-2 border-warmGray-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all bg-white"
               >
                 <option value="phone">Phone</option>
                 <option value="email">Email</option>
@@ -398,7 +398,7 @@
               <select
                 id="bestTimeToCall"
                 bind:value={formData.bestTimeToCall}
-                class="w-full px-4 py-3 border-2 border-warmGray-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-orange focus:border-transparent transition-all bg-white"
+                class="w-full px-4 py-3 border-2 border-warmGray-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all bg-white"
               >
                 <option value="">Select a time</option>
                 <option value="morning">Morning (8am - 12pm)</option>
@@ -415,7 +415,7 @@
             <select
               id="serviceInterest"
               bind:value={formData.serviceInterest}
-              class="w-full px-4 py-3 border-2 border-warmGray-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-orange focus:border-transparent transition-all bg-white"
+              class="w-full px-4 py-3 border-2 border-warmGray-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all bg-white"
             >
               <option value="">Select a service</option>
               <option value="Travel Companion">Travel Companion</option>
@@ -431,14 +431,14 @@
 
           <div class="mb-6">
             <label for="message" class="block text-sm font-semibold text-warmGray-900 mb-2">
-              Tell Us About Your Needs <span class="text-orange">*</span>
+              Tell Us About Your Needs <span class="text-blue-600">*</span>
             </label>
             <textarea
               id="message"
               bind:value={formData.message}
               required
               rows="5"
-              class="w-full px-4 py-3 border-2 border-warmGray-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-orange focus:border-transparent transition-all resize-none"
+              class="w-full px-4 py-3 border-2 border-warmGray-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all resize-none"
               placeholder="Please share any specific needs, preferences, or questions you have about our companion care services..."
             ></textarea>
           </div>

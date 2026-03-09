@@ -56,11 +56,11 @@
 					<div class="bg-white rounded-xl border border-warmGray-200 overflow-hidden hover:shadow-md transition-shadow">
 						<button
 							on:click={() => toggle(index)}
-							class="w-full flex items-center justify-between p-6 text-left focus:outline-none focus:ring-2 focus:ring-orange focus:ring-inset"
+							class="w-full flex items-center justify-between p-6 text-left focus:outline-none focus:ring-2 focus:ring-blue-600 focus:ring-inset"
 						>
 							<span class="font-semibold text-warmGray-900 pr-4">{faq.question}</span>
 							<svg
-								class="w-6 h-6 text-orange flex-shrink-0 transition-transform duration-200 {openIndex === index ? 'transform rotate-180' : ''}"
+								class="w-6 h-6 text-blue-600 flex-shrink-0 transition-transform duration-200 {openIndex === index ? 'transform rotate-180' : ''}"
 								fill="none"
 								stroke="currentColor"
 								viewBox="0 0 24 24"

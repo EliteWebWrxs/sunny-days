@@ -1,4 +1,4 @@
-<footer class="bg-warmGray-900 text-white">
+<footer class="bg-blue-800 text-white">
   <div class="container-custom section">
     <div class="grid md:grid-cols-3 gap-8">
       <!-- Brand Section -->
@@ -12,11 +12,11 @@
             />
           </div>
         </div>
-        <p class="text-warmGray-400 text-sm leading-relaxed mb-4">
+        <p class="text-blue-100 text-sm leading-relaxed mb-4">
           Providing compassionate companion care services to enhance quality of life and bring
           warmth to every day.
         </p>
-        <p class="text-warmGray-500 text-xs">Florida AHCA License #240843</p>
+        <p class="text-blue-200 text-xs">Florida AHCA License #240843</p>
       </div>
 
       <!-- Quick Links -->
@@ -24,15 +24,15 @@
         <h4 class="font-display font-bold text-white mb-4">Quick Links</h4>
         <ul class="space-y-2">
           <li>
-            <a href="/" class="text-warmGray-400 hover:text-gold transition-colors text-sm">Home</a>
+            <a href="/" class="text-blue-100 hover:text-gold transition-colors text-sm">Home</a>
           </li>
           <li>
-            <a href="/services" class="text-warmGray-400 hover:text-gold transition-colors text-sm"
+            <a href="/services" class="text-blue-100 hover:text-gold transition-colors text-sm"
               >Services</a
             >
           </li>
           <li>
-            <a href="/connect" class="text-warmGray-400 hover:text-gold transition-colors text-sm"
+            <a href="/connect" class="text-blue-100 hover:text-gold transition-colors text-sm"
               >Connect</a
             >
           </li>
@@ -41,7 +41,7 @@
               href="https://sunnydayscare.caresmartz360.com"
               target="_blank"
               rel="noopener noreferrer"
-              class="text-warmGray-400 hover:text-gold transition-colors text-sm"
+              class="text-blue-100 hover:text-gold transition-colors text-sm"
               >Staff Portal</a
             >
           </li>
@@ -50,7 +50,7 @@
               href="https://sunnydayscarecp.caresmartz360.com"
               target="_blank"
               rel="noopener noreferrer"
-              class="text-warmGray-400 hover:text-gold transition-colors text-sm"
+              class="text-blue-100 hover:text-gold transition-colors text-sm"
               >Client Portal</a
             >
           </li>
@@ -59,7 +59,7 @@
               href="https://sunnydayscare.caresmartz360.com/prospectivecaregiver/caregiverapplicantform.aspx"
               target="_blank"
               rel="noopener noreferrer"
-              class="text-warmGray-400 hover:text-gold transition-colors text-sm"
+              class="text-blue-100 hover:text-gold transition-colors text-sm"
               >Join Our Team</a
             >
           </li>
@@ -112,7 +112,7 @@
                 d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"
               />
             </svg>
-            <div class="text-warmGray-400 text-sm">
+            <div class="text-blue-100 text-sm">
               <a
                 href="https://maps.google.com/?q=13194+US+Highway+301+South+Suite+170+Riverview+FL+33578"
                 target="_blank"
@@ -130,19 +130,19 @@
     </div>
 
     <!-- Bottom Bar -->
-    <div class="border-t border-warmGray-500 mt-8 pt-8">
-      <div class="text-center text-warmGray-500 text-sm">
-        <p class="mb-2 text-warmGray-500">
+    <div class="border-t border-blue-600 mt-8 pt-8">
+      <div class="text-center text-blue-200 text-sm">
+        <p class="mb-2 text-blue-200">
           Serving Hardee, Highlands, Hillsborough, Manatee, and Polk Counties
         </p>
-        <p class="text-warmGray-500">
+        <p class="text-blue-200">
           &copy; {new Date().getFullYear()} Sunny Days Companion Services. Bringing warmth and care to
           every day.
         </p>
       </div>
-      <div class="mt-6 text-center text-xs text-warmGray-500">
+      <div class="mt-6 text-center text-xs text-blue-200">
         Website by{' '}
-        <a href="https://www.khalstead.com" class="transition-colors hover:text-warmGray-300">
+        <a href="https://www.khalstead.com" class="transition-colors hover:text-white">
           Kevin Halstead, EliteWebWrxs
         </a>
       </div>

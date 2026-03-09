@@ -26,7 +26,7 @@
 
 <!-- Hero Section -->
 <section
-  class="relative bg-gradient-to-br from-gold/10 via-orange/5 to-white section pt-20 min-h-[500px] md:min-h-[600px] flex items-center bg-cover bg-center bg-no-repeat md:bg-fixed"
+  class="relative bg-gradient-to-br from-blue-600/10 via-blue-500/5 to-white section pt-20 min-h-[500px] md:min-h-[600px] flex items-center bg-cover bg-center bg-no-repeat md:bg-fixed"
   style="background-image: url('/images/hero-6.webp'); background-size: cover; background-position: top;"
 >
   <!-- Background Image Overlay (adjust opacity as needed) -->
@@ -48,7 +48,7 @@
   <div class="container-custom">
     <div class="max-w-3xl mx-auto">
       <div
-        class="bg-gradient-to-r from-gold/10 to-orange/10 rounded-2xl p-8 mb-12 border border-gold/20"
+        class="bg-gradient-to-r from-blue-50 to-blue-100 rounded-2xl p-8 mb-12 border border-blue-200"
       >
         <h2 class="text-2xl mb-4 text-center">What We Offer</h2>
         <p class="text-warmGray-700 leading-relaxed text-center">
@@ -70,7 +70,7 @@
       <div class="bg-white rounded-2xl shadow-md hover:shadow-lg transition-shadow overflow-hidden">
         <div class="md:flex">
           <div
-            class="md:w-1/3 bg-gradient-to-br from-gold/20 to-orange/20 flex items-center justify-center overflow-hidden"
+            class="md:w-1/3 bg-gradient-to-br from-blue-100 to-blue-200 flex items-center justify-center overflow-hidden"
           >
             <img
               src="/images/conversation.webp"
@@ -88,7 +88,7 @@
             <ul class="space-y-2">
               <li class="flex items-start">
                 <svg
-                  class="w-5 h-5 text-orange mt-0.5 mr-2 flex-shrink-0"
+                  class="w-5 h-5 text-blue-600 mt-0.5 mr-2 flex-shrink-0"
                   fill="currentColor"
                   viewBox="0 0 20 20"
                 >
@@ -102,7 +102,7 @@
               </li>
               <li class="flex items-start">
                 <svg
-                  class="w-5 h-5 text-orange mt-0.5 mr-2 flex-shrink-0"
+                  class="w-5 h-5 text-blue-600 mt-0.5 mr-2 flex-shrink-0"
                   fill="currentColor"
                   viewBox="0 0 20 20"
                 >
@@ -118,7 +118,7 @@
               </li>
               <li class="flex items-start">
                 <svg
-                  class="w-5 h-5 text-orange mt-0.5 mr-2 flex-shrink-0"
+                  class="w-5 h-5 text-blue-600 mt-0.5 mr-2 flex-shrink-0"
                   fill="currentColor"
                   viewBox="0 0 20 20"
                 >
@@ -139,7 +139,7 @@
       <div class="bg-white rounded-2xl shadow-md hover:shadow-lg transition-shadow overflow-hidden">
         <div class="md:flex md:flex-row-reverse">
           <div
-            class="md:w-1/3 bg-gradient-to-br from-gold/20 to-orange/20 flex items-center justify-center overflow-hidden"
+            class="md:w-1/3 bg-gradient-to-br from-blue-100 to-blue-200 flex items-center justify-center overflow-hidden"
           >
             <img
               src="/images/mealprep.webp"
@@ -157,7 +157,7 @@
             <ul class="space-y-2">
               <li class="flex items-start">
                 <svg
-                  class="w-5 h-5 text-orange mt-0.5 mr-2 flex-shrink-0"
+                  class="w-5 h-5 text-blue-600 mt-0.5 mr-2 flex-shrink-0"
                   fill="currentColor"
                   viewBox="0 0 20 20"
                 >
@@ -171,7 +171,7 @@
               </li>
               <li class="flex items-start">
                 <svg
-                  class="w-5 h-5 text-orange mt-0.5 mr-2 flex-shrink-0"
+                  class="w-5 h-5 text-blue-600 mt-0.5 mr-2 flex-shrink-0"
                   fill="currentColor"
                   viewBox="0 0 20 20"
                 >
@@ -185,7 +185,7 @@
               </li>
               <li class="flex items-start">
                 <svg
-                  class="w-5 h-5 text-orange mt-0.5 mr-2 flex-shrink-0"
+                  class="w-5 h-5 text-blue-600 mt-0.5 mr-2 flex-shrink-0"
                   fill="currentColor"
                   viewBox="0 0 20 20"
                 >
@@ -206,7 +206,7 @@
       <div class="bg-white rounded-2xl shadow-md hover:shadow-lg transition-shadow overflow-hidden">
         <div class="md:flex">
           <div
-            class="md:w-1/3 bg-gradient-to-br from-gold/20 to-orange/20 flex items-center justify-center overflow-hidden"
+            class="md:w-1/3 bg-gradient-to-br from-blue-100 to-blue-200 flex items-center justify-center overflow-hidden"
           >
             <img
               src="/images/housekeeping.webp"
@@ -223,7 +223,7 @@
             <ul class="space-y-2">
               <li class="flex items-start">
                 <svg
-                  class="w-5 h-5 text-orange mt-0.5 mr-2 flex-shrink-0"
+                  class="w-5 h-5 text-blue-600 mt-0.5 mr-2 flex-shrink-0"
                   fill="currentColor"
                   viewBox="0 0 20 20"
                 >
@@ -237,7 +237,7 @@
               </li>
               <li class="flex items-start">
                 <svg
-                  class="w-5 h-5 text-orange mt-0.5 mr-2 flex-shrink-0"
+                  class="w-5 h-5 text-blue-600 mt-0.5 mr-2 flex-shrink-0"
                   fill="currentColor"
                   viewBox="0 0 20 20"
                 >
@@ -251,7 +251,7 @@
               </li>
               <li class="flex items-start">
                 <svg
-                  class="w-5 h-5 text-orange mt-0.5 mr-2 flex-shrink-0"
+                  class="w-5 h-5 text-blue-600 mt-0.5 mr-2 flex-shrink-0"
                   fill="currentColor"
                   viewBox="0 0 20 20"
                 >
@@ -272,7 +272,7 @@
       <div class="bg-white rounded-2xl shadow-md hover:shadow-lg transition-shadow overflow-hidden">
         <div class="md:flex md:flex-row-reverse">
           <div
-            class="md:w-1/3 bg-gradient-to-br from-gold/20 to-orange/20 flex items-center justify-center overflow-hidden"
+            class="md:w-1/3 bg-gradient-to-br from-blue-100 to-blue-200 flex items-center justify-center overflow-hidden"
           >
             <img
               src="/images/errand.webp"
@@ -290,7 +290,7 @@
             <ul class="space-y-2">
               <li class="flex items-start">
                 <svg
-                  class="w-5 h-5 text-orange mt-0.5 mr-2 flex-shrink-0"
+                  class="w-5 h-5 text-blue-600 mt-0.5 mr-2 flex-shrink-0"
                   fill="currentColor"
                   viewBox="0 0 20 20"
                 >
@@ -304,7 +304,7 @@
               </li>
               <li class="flex items-start">
                 <svg
-                  class="w-5 h-5 text-orange mt-0.5 mr-2 flex-shrink-0"
+                  class="w-5 h-5 text-blue-600 mt-0.5 mr-2 flex-shrink-0"
                   fill="currentColor"
                   viewBox="0 0 20 20"
                 >
@@ -318,7 +318,7 @@
               </li>
               <li class="flex items-start">
                 <svg
-                  class="w-5 h-5 text-orange mt-0.5 mr-2 flex-shrink-0"
+                  class="w-5 h-5 text-blue-600 mt-0.5 mr-2 flex-shrink-0"
                   fill="currentColor"
                   viewBox="0 0 20 20"
                 >
@@ -339,7 +339,7 @@
       <div class="bg-white rounded-2xl shadow-md hover:shadow-lg transition-shadow overflow-hidden">
         <div class="md:flex">
           <div
-            class="md:w-1/3 bg-gradient-to-br from-gold/20 to-orange/20 flex items-center justify-center overflow-hidden"
+            class="md:w-1/3 bg-gradient-to-br from-blue-100 to-blue-200 flex items-center justify-center overflow-hidden"
           >
             <img
               src="/images/reminder.webp"
@@ -356,7 +356,7 @@
             <ul class="space-y-2">
               <li class="flex items-start">
                 <svg
-                  class="w-5 h-5 text-orange mt-0.5 mr-2 flex-shrink-0"
+                  class="w-5 h-5 text-blue-600 mt-0.5 mr-2 flex-shrink-0"
                   fill="currentColor"
                   viewBox="0 0 20 20"
                 >
@@ -370,7 +370,7 @@
               </li>
               <li class="flex items-start">
                 <svg
-                  class="w-5 h-5 text-orange mt-0.5 mr-2 flex-shrink-0"
+                  class="w-5 h-5 text-blue-600 mt-0.5 mr-2 flex-shrink-0"
                   fill="currentColor"
                   viewBox="0 0 20 20"
                 >
@@ -384,7 +384,7 @@
               </li>
               <li class="flex items-start">
                 <svg
-                  class="w-5 h-5 text-orange mt-0.5 mr-2 flex-shrink-0"
+                  class="w-5 h-5 text-blue-600 mt-0.5 mr-2 flex-shrink-0"
                   fill="currentColor"
                   viewBox="0 0 20 20"
                 >
@@ -407,7 +407,7 @@
       <div class="bg-white rounded-2xl shadow-md hover:shadow-lg transition-shadow overflow-hidden">
         <div class="md:flex md:flex-row-reverse">
           <div
-            class="md:w-1/3 bg-gradient-to-br from-gold/20 to-orange/20 flex items-center justify-center overflow-hidden"
+            class="md:w-1/3 bg-gradient-to-br from-blue-100 to-blue-200 flex items-center justify-center overflow-hidden"
           >
             <img
               src="/images/travel.webp"
@@ -424,7 +424,7 @@
             <ul class="space-y-2">
               <li class="flex items-start">
                 <svg
-                  class="w-5 h-5 text-orange mt-0.5 mr-2 flex-shrink-0"
+                  class="w-5 h-5 text-blue-600 mt-0.5 mr-2 flex-shrink-0"
                   fill="currentColor"
                   viewBox="0 0 20 20"
                 >
@@ -443,7 +443,7 @@
               </li>
               <li class="flex items-start">
                 <svg
-                  class="w-5 h-5 text-orange mt-0.5 mr-2 flex-shrink-0"
+                  class="w-5 h-5 text-blue-600 mt-0.5 mr-2 flex-shrink-0"
                   fill="currentColor"
                   viewBox="0 0 20 20"
                 >
@@ -462,7 +462,7 @@
               </li>
               <li class="flex items-start">
                 <svg
-                  class="w-5 h-5 text-orange mt-0.5 mr-2 flex-shrink-0"
+                  class="w-5 h-5 text-blue-600 mt-0.5 mr-2 flex-shrink-0"
                   fill="currentColor"
                   viewBox="0 0 20 20"
                 >
@@ -488,7 +488,7 @@
 
 <!-- Image Section - Quality Care -->
 <section
-  class="relative h-[500px] md:h-[600px] bg-gradient-to-r from-gold/20 to-orange/20 bg-cover bg-center bg-no-repeat md:bg-fixed"
+  class="relative h-[500px] md:h-[600px] bg-gradient-to-r from-blue-100 to-blue-200 bg-cover bg-center bg-no-repeat md:bg-fixed"
   style="background-image: url('/images/hero-5.webp'); background-size: cover; background-position: top;"
 >
   <!-- Overlay to ensure text readability (adjust opacity as needed) -->
@@ -533,5 +533,5 @@
   primaryButtonText="Schedule Consultation"
   secondaryButtonText="View All Services"
   secondaryButtonLink="/services"
-  backgroundStyle="orange"
+  backgroundStyle="white"
 />

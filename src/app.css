@@ -64,7 +64,7 @@
 
   input:focus,
   textarea:focus {
-    @apply outline-none ring-2 ring-gold ring-opacity-50;
+    @apply outline-none ring-2 ring-blue-500 ring-opacity-50;
   }
 }
 
@@ -74,7 +74,7 @@
   }
 
   .btn-primary {
-    @apply btn bg-orange text-white hover:bg-orange/90 hover:shadow-lg;
+    @apply btn bg-blue-600 text-white hover:bg-blue-700 hover:shadow-lg;
   }
 
   .btn-secondary {
@@ -82,7 +82,7 @@
   }
 
   .btn-outline {
-    @apply btn border-2 border-orange text-orange hover:bg-orange hover:text-white;
+    @apply btn border-2 border-blue-600 text-blue-600 hover:bg-blue-600 hover:text-white;
   }
 
   .section {

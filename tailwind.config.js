@@ -6,6 +6,11 @@ export default {
       colors: {
         gold: '#FDC102',
         orange: '#EC7200',
+        primary: {
+          DEFAULT: '#2563EB', // blue-600
+          light: '#3B82F6',   // blue-500
+          dark: '#1E40AF',    // blue-800
+        },
         warmGray: {
           50: '#FAFAF9',
           100: '#F5F5F4',

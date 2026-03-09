@@ -5,24 +5,24 @@
 	export let primaryButtonLink = "/connect";
 	export let secondaryButtonText = "";
 	export let secondaryButtonLink = "";
-	export let backgroundStyle = "orange"; // "orange", "gold", or "white"
+	export let backgroundStyle = "white"; // "blue", "gold", or "white"
 </script>
 
-<section class="section {backgroundStyle === 'orange' ? 'bg-orange text-white' : backgroundStyle === 'gold' ? 'bg-gold text-warmGray-900' : 'bg-warmGray-50'}">
+<section class="section {backgroundStyle === 'blue' ? 'bg-blue-600 text-white' : backgroundStyle === 'gold' ? 'bg-gold text-warmGray-900' : 'bg-warmGray-50'}">
 	<div class="container-custom">
 		<div class="max-w-3xl mx-auto text-center">
-			<h2 class="{backgroundStyle === 'orange' ? 'text-white' : backgroundStyle === 'gold' ? 'text-warmGray-900' : 'text-warmGray-900'} mb-4">
+			<h2 class="{backgroundStyle === 'blue' ? 'text-white' : backgroundStyle === 'gold' ? 'text-warmGray-900' : 'text-warmGray-900'} mb-4">
 				{title}
 			</h2>
-			<p class="{backgroundStyle === 'orange' ? 'text-white/90' : backgroundStyle === 'gold' ? 'text-warmGray-800' : 'text-warmGray-700'} text-lg mb-8">
+			<p class="{backgroundStyle === 'blue' ? 'text-white/90' : backgroundStyle === 'gold' ? 'text-warmGray-800' : 'text-warmGray-700'} text-lg mb-8">
 				{description}
 			</p>
 			<div class="flex flex-col sm:flex-row gap-4 justify-center items-stretch w-full sm:w-auto px-4 sm:px-0">
-				<a href={primaryButtonLink} class="{backgroundStyle === 'orange' ? 'btn bg-white text-orange hover:bg-warmGray-100' : backgroundStyle === 'gold' ? 'btn-primary' : 'btn-primary'} w-full sm:w-auto">
+				<a href={primaryButtonLink} class="{backgroundStyle === 'blue' ? 'btn bg-white text-blue-600 hover:bg-warmGray-100' : backgroundStyle === 'gold' ? 'btn-primary' : 'btn-primary'} w-full sm:w-auto">
 					{primaryButtonText}
 				</a>
 				{#if secondaryButtonText}
-					<a href={secondaryButtonLink} class="{backgroundStyle === 'orange' ? 'btn border-2 border-white text-white hover:bg-white hover:text-orange' : 'btn-outline'} w-full sm:w-auto">
+					<a href={secondaryButtonLink} class="{backgroundStyle === 'blue' ? 'btn border-2 border-white text-white hover:bg-white hover:text-blue-600' : 'btn-outline'} w-full sm:w-auto">
 						{secondaryButtonText}
 					</a>
 				{/if}
