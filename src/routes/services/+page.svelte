@@ -30,7 +30,9 @@
   style="background-image: url('/images/hero-6.webp'); background-size: cover; background-position: top;"
 >
   <!-- Background Image Overlay (adjust opacity as needed) -->
-  <div class="absolute inset-0 bg-gradient-to-br from-warmGray-900/60 via-warmGray-900/50 to-warmGray-900/60 z-0"></div>
+  <div
+    class="absolute inset-0 bg-gradient-to-br from-warmGray-900/60 via-warmGray-900/50 to-warmGray-900/60 z-0"
+  ></div>
 
   <div class="container-custom relative z-10">
     <div class="max-w-3xl mx-auto text-center">
@@ -403,9 +405,72 @@
         </div>
       </div>
 
-      <!-- Service 6: Travel Companions -->
+      <!-- Service 6: Respite Care -->
       <div class="bg-white rounded-2xl shadow-md hover:shadow-lg transition-shadow overflow-hidden">
         <div class="md:flex md:flex-row-reverse">
+          <div
+            class="md:w-1/3 bg-gradient-to-br from-blue-100 to-blue-200 flex items-center justify-center overflow-hidden"
+          >
+            <img src="/images/respite.jpg" alt="Respite Care" class="w-full h-full object-cover" />
+          </div>
+          <div class="md:w-2/3 p-8">
+            <h3 class="mb-3">Respite Care</h3>
+            <p class="text-warmGray-700 mb-4 leading-relaxed">
+              For caregivers, we provide temporary, short-term relief for primary caregivers,
+              ranging from a few hours up to 30 days. Services can be delivered to clients while
+              they are at or away from home.
+            </p>
+            <ul class="space-y-2">
+              <li class="flex items-start">
+                <svg
+                  class="w-5 h-5 text-blue-600 mt-0.5 mr-2 flex-shrink-0"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                    clip-rule="evenodd"
+                  />
+                </svg>
+                <span class="text-warmGray-700">Flexible relief from a few hours to 30 days</span>
+              </li>
+              <li class="flex items-start">
+                <svg
+                  class="w-5 h-5 text-blue-600 mt-0.5 mr-2 flex-shrink-0"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                    clip-rule="evenodd"
+                  />
+                </svg>
+                <span class="text-warmGray-700">Care provided at home or away from home</span>
+              </li>
+              <li class="flex items-start">
+                <svg
+                  class="w-5 h-5 text-blue-600 mt-0.5 mr-2 flex-shrink-0"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                    clip-rule="evenodd"
+                  />
+                </svg>
+                <span class="text-warmGray-700">Peace of mind for primary caregivers</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Service 7: Travel Companions -->
+      <div class="bg-white rounded-2xl shadow-md hover:shadow-lg transition-shadow overflow-hidden">
+        <div class="md:flex">
           <div
             class="md:w-1/3 bg-gradient-to-br from-blue-100 to-blue-200 flex items-center justify-center overflow-hidden"
           >
@@ -474,8 +539,9 @@
                 </svg>
                 <span class="text-warmGray-700"
                   >Recovery Travel Support for clients traveling before, during, or after medical
-                  procedures. We offer medication reminders, post-surgical support, and communication
-                  with family or healthcare providers to ensure a smooth and safe journey.</span
+                  procedures. We offer medication reminders, post-surgical support, and
+                  communication with family or healthcare providers to ensure a smooth and safe
+                  journey.</span
                 >
               </li>
             </ul>
