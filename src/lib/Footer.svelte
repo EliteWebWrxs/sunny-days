@@ -17,6 +17,7 @@
           warmth to every day.
         </p>
         <p class="text-blue-200 text-xs">Florida AHCA License #240843</p>
+        <p class="text-blue-200 text-xs">Fla. Seller of Travel Ref. No. ST46461</p>
       </div>
 
       <!-- Quick Links -->
